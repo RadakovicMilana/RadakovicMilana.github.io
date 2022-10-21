@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researchers Night</title>
+
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+      
+        .image{
+                background-image: url('image.jpg'); 
+                background-color: rgba(194, 194, 194, 15%); 
+                height: 500px; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+                position: relative;
+                /*opacity: 1;*/
+        }
+        .forma{
+            text-align: center;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type=text] {
+          width: 40%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          box-sizing:border-box;
+          border: 3px solid #9d8cc4;
+        }
+        input[type=submit] {
+          width: 20%;
+          padding: 7px 10px;
+          box-sizing:border-box;
+          border: 3px solid #9d8cc4;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .button :hover{
+          background-color: rgb(103, 84, 120);
+          color: white;
+        }
+        footer {
+            text-align: center;
+            background-color:#9d8cc4;
+            color: #ffffff;
+            margin: 0%;
+            padding: 0px;
+        }
+        .copy {
+            padding: 32px;
+        }
+
+        .header {
+          background-color: #9d8cc4;
+          padding: 0 1em;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 30px;
+        }
+
+        .nav li {
+            color: #ffffff;
+            display: inline-block;
+        }
+        .levelup{
+            text-align: left;
+            text-decoration: underline overline dotted rgb(186, 134, 231);
+            padding: 120px 1em;
+            color: #ffffff;
+            font-size: 300%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+   
+
+            *,
+            *:before,
+            *:after {
+              box-sizing: border-box;
+            }
+
+            body {
+              font-family: "Titillium Web", sans-serif;
+              font-size: 20px;
+              line-height: 1.4;
+              color:#9d8cc4;
+            }
+
+            .quote-wrapper {
+              width: 300px;
+              height: 300px;
+              position: relative;
+              margin: 10vh auto 0;
+            }
+            .two{
+              position: absolute;
+                top: -20px;
+                left: -150px;
+                font-size: 250px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                z-index: 3;
+                color:rgb(17, 13, 56);
+                text-shadow: 0 0 30px #8f3fdf, 0 0 5px #0000FF;
+                
+            }
+            .twotwo{
+              position: absolute;
+                top: -20px;
+                left: 300px;
+                font-size: 250px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                z-index: 3;
+                color: rgb(17, 13, 56);
+                text-shadow: 0 0 30px #8f3fdf, 0 0 5px #0000FF;
+                
+            }
+
+            .text {
+              width: 100%;
+              height: 100%;
+              background: radial-gradient(
+                ellipse at center,
+                rgb(179, 168, 218) 0%,
+                rgb(175, 140, 218) 70%,
+                rgba(170, 131, 209, 0) 70.3%
+              );
+              position: relative;
+              margin: 0;
+              color: white;
+            }
+            .text p {
+              height: 100%;
+              font-size: 21px;
+              line-height: 1.25;
+              padding: 0;
+              text-align: center;
+              font-style: italic;
+              text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+            }
+
+            .text::before {
+              content: "";
+              width: 50%;
+              height: 100%;
+              float: left;
+              shape-outside: polygon(
+                0 0,
+                98% 0,
+                50% 6%,
+                23.4% 17.3%,
+                6% 32.6%,
+                0 50%,
+                6% 65.6%,
+                23.4% 82.7%,
+                50% 94%,
+                98% 100%,
+                0 100%
+              );
+              shape-margin: 7%;
+            }
+            .text p::before {
+              content: "";
+              width: 50%;
+              height: 100%;
+              float: right;
+              shape-outside: polygon(
+                2% 0%,
+                100% 0%,
+                100% 100%,
+                2% 100%,
+                50% 94%,
+                76.6% 82.7%,
+                94% 65.6%,
+                100% 50%,
+                94% 32.6%,
+                76.6% 17.3%,
+                50% 6%
+              );
+              shape-margin: 7%;
+            }
+            .quote-wrapper::before {/*za znak navodnika*/
+              content: "\201C";
+              font-size: 270px;
+              height: 82px;
+              line-height: 0.78;
+              line-height: 1;
+              position: absolute;
+              top: -48px;
+              left: 0;
+              z-index: 1;
+              font-family: sans-serif, serif;
+              color: #ccc;
+              opacity: 0.9;
+            }
+
+ </style>
+</head>
+<body>
+    <header>
+    <div class="image">
+        <div class="header">
+            <div class="nav">
+              <h1>Researchers Night</h1>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+        </div>
+        <div class="levelup">
+            <p>Ready to level up!</p><br>
+            <p>Now is the time</p>
+        </div>
+    </div>
+    </header>
+    <div class="quote-wrapper">
+        <blockquote class="text">
+          <p> Visit the events to meet researcgers and discover the fascinating world of science in a fun and interactive environment
+          </p>
+        </blockquote>
+        <div class="two">
+        <p>2</p>
+        </div>
+        <div class="twotwo">
+        <p>22</p>
+        </div>
+    </div>
+     <div class="forma">
+        <h3>Sign up for event</h3>
+        <form action="/">
+        <label for="name"> Name</label>
+        <input type="text" value="" id="name" placeholder="Your Name"><br>
+        <br>
+        <label for="surname"> Surname</label>
+        <input type="text" value="" id="surname" placeholder="Your Name"><br>
+        <br>
+        <label for="email"> E-mail</label>
+        <input type="text" value="" id="email" placeholder="Your Email"><br>
+        <br>
+        <label for="city""> City</label>
+        <input type="text" value="" id="city" placeholder="Your City"><br>
+        <br>
+        <div class="button">
+        <input type="submit" value="Sign up">  
+      </div>
+       </form>
+    </div>
+</body>
+<footer>
+    <p class="copy">&copy; 2022 Copyrights | All Rights Reserved</p>
+</footer>
+</html>
